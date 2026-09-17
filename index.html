@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>民雄國中學生資料查詢系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header-bar">
+    <img src="https://drive.google.com/thumbnail?id=13wvxx1cb7npKIacUIaz64wlParbGmrGW&sz=w500" class="logo-img" alt="校徽">
+    <div class="header-text">
+      <span class="system-title">民雄國中學生資料查詢系統</span>
+      <span class="mode-title" id="headerTitle">- 學號查找</span>
+      <a href="https://docs.google.com/spreadsheets/d/1Nv3rZZCV3X3y3t_54BmAatYBlUaJwM7te2YZFA3KNc0/edit?usp=sharing" 
+         target="_blank" 
+         class="batch-link">
+         【批次資料查詢】
+      </a>
+    </div>
+  </div>
+  
+  <div class="control-panel">
+    <div class="form-group">
+      <label for="searchType">1. 選擇查詢類別：</label>
+      <select id="searchType">
+        <option value="學號">學號查找</option>
+        <option value="班號">班級座號查找</option>
+        <option value="姓名">姓名查找</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label id="inputLabel" for="keywordInput">2. 請輸入/選擇學號：</label>
+      <input type="text" id="keywordInput" placeholder="請輸入關鍵字過濾或點擊選單..." autocomplete="off">
+      <div id="dropdownPanel" class="dropdown-panel"></div>
+    </div>
+  </div>
+
+  <div class="result-section">
+    <div id="loading" class="loading">🔍 資料查詢中，請稍候...</div>
+    <div id="message" class="message"></div>
+
+    <div id="resultContent" style="display: none;">
+      <div class="result-title">學生詳細資料</div>
+      
+      <div class="profile-card">
+        <div class="avatar-box" id="avatarBox"></div>
+        <div class="details-box">
+          <table class="result-table">
+            <tbody id="resultBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
