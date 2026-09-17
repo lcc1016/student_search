@@ -1,5 +1,5 @@
 // ⚠️ 請將此處替換為您的 Google Apps Script Web App 部署網址
-const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwdqKRQM2Y74-pnYuwKbAIgoXfR95t2fWJaAH3AfTuVsFiKgPSCWK7s7Y9B3XfCdUjtuQ/exec";
+const GAS_WEB_APP_URL = "https://script.google.com/a/macros/mihjh.cyc.edu.tw/s/AKfycbwdqKRQM2Y74-pnYuwKbAIgoXfR95t2fWJaAH3AfTuVsFiKgPSCWK7s7Y9B3XfCdUjtuQ/exec";
 
 let allOptions = [];
 let timer = null;
