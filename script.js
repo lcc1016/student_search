@@ -114,7 +114,7 @@ function executeSearch(keyword) {
   message.innerText = "";
 
   // 改用 fetch API 進行單筆資料查詢
-  const apiUrl = `${GAS_WEB_APP_URL}?action=searchStudent&searchType=${encodeURIComponent(type)}&keyword=${encodeURIComponent(keyword)}`;
+ const GAS_WEB_APP_URL = "https://script.google.com/a/macros/mihjh.cyc.edu.tw/s/AKfycbwdqKRQM2Y74-pnYuwKbAIgoXfR95t2fWJaAH3AfTuVsFiKgPSCWK7s7Y9B3XfCdUjtuQ/exec";
 
   fetch(apiUrl)
     .then(response => response.json())
